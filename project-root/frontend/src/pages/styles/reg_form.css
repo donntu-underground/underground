@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    /* Исправлено: было "0 px" */
+    min-height: 100vh;
+    /* Занимает всю высоту экрана */
+    display: flex;
+    /* Делаем body flex-контейнером */
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    align-items: center;
+    /* Центрирование по вертикали */
+    background: #1e1e1e;
+    /* Цвет фона для темной темы */
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-header {
+    min-width: 300px;
+    min-height: 600px;
+    width: 100%;
+    /* Занимает всю доступную ширину */
+    max-width: 400px;
+    /* Максимальная ширина карточки */
+}
+
+
+/* Остальные стили остаются без изменений */
+
+.card-header [slot='header'] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header h3 {
+    margin: 0;
+}
+
+.card-header sl-icon-button {
+    font-size: var(--sl-font-size-medium);
+}
