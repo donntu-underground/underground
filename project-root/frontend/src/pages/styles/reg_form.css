@@ -12,6 +12,10 @@ body {
     background: #1b1b1b;
     /* Цвет фона для темной темы */
     font-family: 'Rubik', sans-serif;
+    font: 16px sans-serif;
+    background-color: var(--sl-color-neutral-0);
+    color: var(--sl-color-neutral-900);
+    padding: 1rem;
 }
 
 .card-header {
@@ -21,6 +25,7 @@ body {
     /* Занимает всю доступную ширину */
     max-width: 400px;
     /* Максимальная ширина карточки */
+    --border-radius: 6px;
 }
 
 
@@ -38,4 +43,22 @@ body {
 
 .card-header sl-icon-button {
     font-size: var(--sl-font-size-medium);
+}
+
+.success-button {
+    display: block;
+    width: 100%;
+    /* Растягиваем контейнер на всю ширину */
+}
+
+.success-button sl-button {
+    width: 100%;
+    /* Растягиваем кнопку */
+    display: block;
+    /* Делаем блочным */
+}
+
+.sl-toast-stack {
+    left: 0;
+    right: auto;
 }
