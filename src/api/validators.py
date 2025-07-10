@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field
 
 
 class LoginData(BaseModel):  # данные логина
@@ -13,3 +13,4 @@ class RegData(BaseModel):  # данные регистрации
     email: str = Field(..., min_length=1, max_length=50)
     password: str = Field(..., min_length=256, max_length=256)
     secret_word: str = Field(..., min_length=1, max_length=50)
+    group: str = Field(..., min_length=1, max_length=20)
