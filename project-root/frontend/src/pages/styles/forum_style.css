@@ -229,16 +229,13 @@ header {
 /* Search Box styles */
 
 .search-box {
-    border: solid 1px rgb(109, 112, 255);
-    margin-top: 20px;
     padding: 40px;
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 8px rgb(149, 151, 255);
 }
 
 .search-box sl-select {
-    padding: auto;
+    padding: 10px;
 }
 
 .search-box sl-input {
@@ -247,15 +244,16 @@ header {
 
 .search-box sl-button {
     padding-top: 10px;
+    min-width: 500px;
 }
 
 
 /* search box for smrtphones */
 
 @media screen and (max-width: 460px) {
-    .search-box input,
+    .search-box sl-input,
     .search-box sl-button,
-    .search-box select {
+    .search-box sl-select {
         min-width: 300px;
         margin-top: 5px;
     }
